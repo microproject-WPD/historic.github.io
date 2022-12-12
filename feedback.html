@@ -1,0 +1,154 @@
+<html>
+<head>
+<style>
+h1{
+color:white; 
+margin-left:50px;
+margin-top:50px;
+}
+.feedback-box
+{
+   border:2px solid black;
+   border-radius:30px;
+   width:400px;
+   height:440px;
+   margin-left:550px;
+   margin-top:170px;
+   background-color:transparent;
+   box-shadow:5px 5px 50px white;
+}
+.logo
+{
+   margin-top:-55px;
+   margin-left:150px;
+   border:2px solid black;
+   border-radius:20px;
+}
+.l3{
+   margin-left:20px;
+   font-size:20px;
+   font-family:Sans-serif bold;
+   padding-bottom:20px;
+   color:white;
+   margin-bottom:20px;
+   top:20px;
+}
+.l2{
+   color:white;
+   font-size:20px;
+   font-family:Sans-serif bold;
+   margin-left:20px;
+   
+}
+.feedback-box input, textarea
+{
+   margin-left:20px;
+   margin-top:10px;
+   margin-bottom:30px;
+   outline:0;
+   font-size:15px;
+   color:white;
+   border:1px solid white;
+   background-color:transparent;
+}
+
+.feedback-box input, button
+{
+  width:180px;
+  color:white;
+}
+
+.logo1
+{
+   height:40px;
+   width:40px;
+   background:transparent;
+   margin-left:90px;
+   margin-top:-70px;
+   padding:0 10px 10px 0;
+
+}
+.logo2{
+   height:40px;
+   width:40px;
+   background:transparent;
+   margin-left:30px;
+   padding:0 10px 10px 0;
+}
+.logo3{
+  height:40px;
+   width:40px;
+   background:transparent;
+    margin-left:30px;
+    padding:0 10px 10px 0;
+}
+</style></head>
+<body style="background-image: url('D:/CSS MICROPROJECT/bg2.jpg') ; background-size:cover; background-repeat:no-repeat">
+
+<h1>HISTORICLANDMARKS</h1>
+<form onsubmit="sendEmail(); reset(); return false;">
+<div class="feedback-box">
+<img class="logo" src="D:\CSS MICROPROJECT\feedbacklogo.png" width=90 height=90>
+<br>
+<br>
+<label class="l2">EMAIL</label><br>
+<input type="email" id="email">
+<br><label class="l3">FEEDBACK</label></br>
+<textarea rows="6" cols="40" id="ta1" onkeyup="valid()">
+</textarea>
+
+<input class="click" type="submit" value="SUBMIT" id="b1" style="background-color:transparent;width:90px; margin-left:150px; margin-top:-2px; border:2px solid white; border-radius:30px;" 
+onclick="show()" disabled>
+<br>
+<img class="logo1" src="D:\CSS MICROPROJECT\twitter.png">
+<img class="logo2" src="D:\CSS MICROPROJECT\w1.jpg">
+<img class="logo3" src="D:\CSS MICROPROJECT\insta2.jpg">
+
+</div>
+</form>
+ 
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+ <script>
+     function sendEmail()
+	 {
+	    /*Email.send({
+        SecureToken : "41b7d898-02d8-4157-b577-b4de86375458",
+        To : 'aishwaryamsuryawanshi@gmail.com',
+        From : 'aishwaryamsuryawanshi@gmail.com',
+        Subject : "This is the subject",
+        Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );*/
+		Email.send({
+			Host : "smtp.elasticemail.com",
+			Username : "aishwaryamsuryawanshi@gmail",
+			Password : "aishu24@",
+			To : 'aishwaryamsuryawanshi@gmail.com',
+			From : 'aishwaryamsuryawanshi@gmail.com',
+			Subject : "New Feedback Form ",
+			Body : "And this is the body"
+			}).then(
+			 message => alert(message)
+	        );
+	 }
+	 
+	 function valid()
+	 {
+	    var a=document.getElementById("email");
+		var b=document.getElementById("ta1");
+		var c=document.getElementById("b1");
+		
+	    if(a.value!="")
+		{
+		  if(b.value!="")
+		  {
+		    c.style.color='blue';
+		    c.disabled=false;
+		  }
+		}
+	 }
+ </script>
+</body>
+</html>
+

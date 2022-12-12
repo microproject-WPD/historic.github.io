@@ -1,0 +1,126 @@
+<html>
+<head>
+<style>
+h1{
+color:white; 
+margin-left:50px;
+margin-top:50px;
+}
+.feedback-box
+{
+   border:2px solid black;
+   border-radius:30px;
+   width:400px;
+   height:440px;
+   margin-left:550px;
+   margin-top:170px;
+   background-color:transparent;
+   box-shadow:5px 5px 50px white;
+}
+.logo
+{
+   margin-top:-55px;
+   margin-left:150px;
+   border:2px solid black;
+   border-radius:20px;
+}
+.l3{
+   margin-left:20px;
+   font-size:20px;
+   font-family:Sans-serif bold;
+   padding-bottom:20px;
+   color:white;
+   margin-bottom:20px;
+   top:20px;
+}
+.l2{
+   color:white;
+   font-size:20px;
+   font-family:Sans-serif bold;
+   margin-left:20px;
+   
+}
+.feedback-box input, textarea
+{
+   margin-left:20px;
+   margin-top:10px;
+   margin-bottom:30px;
+   outline:0;
+   font-size:15px;
+   color:white;
+   border:1px solid white;
+   background-color:transparent;
+}
+
+.feedback-box input, button
+{
+  width:180px;
+  color:white;
+}
+
+.logo1
+{
+   height:40px;
+   width:40px;
+   background:transparent;
+   margin-left:90px;
+   margin-top:-70px;
+   padding:0 10px 10px 0;
+
+}
+.logo2{
+   height:40px;
+   width:40px;
+   background:transparent;
+   margin-left:30px;
+   padding:0 10px 10px 0;
+}
+.logo3{
+  height:40px;
+   width:40px;
+   background:transparent;
+    margin-left:30px;
+    padding:0 10px 10px 0;
+}
+.click:hover
+{
+   color:black;
+}
+</style></head>
+<body style="background-image: url('D:/CSS MICROPROJECT/bg2.jpg') ; background-size:cover; background-repeat:no-repeat">
+
+<h1>HISTORICLANDMARKS</h1>
+<form name="google-sheet" method="POST">
+<div class="feedback-box">
+<img class="logo" src="D:\CSS MICROPROJECT\feedbacklogo.png" width=90 height=90>
+<br>
+<br>
+<label class="l2">EMAIL</label><br>
+<input type="email" id="email" name="EMAIL">
+<br><label class="l3">FEEDBACK</label></br>
+<textarea rows="6" cols="40" id="ta1" onkeyup="valid()"  name="FEEDBACK">
+</textarea>
+
+<input class="click" type="submit" value="SUBMIT" id="b1" style="background-color:transparent;width:90px; margin-left:150px; margin-top:-2px; border:2px solid white; border-radius:30px;" >
+<br>
+<img class="logo1" src="D:\CSS MICROPROJECT\twitter.png">
+<img class="logo2" src="D:\CSS MICROPROJECT\w1.jpg">
+<img class="logo3" src="D:\CSS MICROPROJECT\insta2.jpg">
+
+</div>
+</form>
+ <script>
+   const scriptURL='https://script.google.com/macros/s/AKfycbw4Vr6sv37EEODb47lyldFj6X2Z7I7Is7FODH5L_AMPm1tdIm_2F4tmtp3nbUhkGkfaHQ/exec'
+   const form=document.forms['google-sheet']
+   
+   form.addEventListener('submit',e => {
+      e.preventDefault()
+	  fetch(scriptURL,{method: 'POST',body:new FormData(form)})
+	    .then(response => alert("Thanks for sending Feedback.."))
+		.catch(error => console.error('Error!',error.message))
+   })
+ </script>
+ 
+</body>
+</html>
+

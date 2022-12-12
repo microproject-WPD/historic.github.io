@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+body{
+margin:0;
+padding:0;
+background-color:black;//#1C398B
+}
+h1{
+margin-top:50px;
+margin-right:50px;
+color:white;
+text-align:center;
+}
+.slider{
+   margin-top:10px;
+   margin-left:400px;
+   box-shadow:5px 5px 10px white;
+}
+.next{
+  margin-top:50px;
+  margin-left:680px;
+}
+.next input
+{
+    font-size:15px;
+	color:330033;
+	
+}
+</style>
+<script>
+  var i=0;
+  var images=[];
+  var time=3000;
+  
+  images[0]='D:/CSS MICROPROJECT/HAMPI.jpg';
+  images[1]='D:/CSS MICROPROJECT/gatewayofindia.jpg';
+  images[2]='D:/CSS MICROPROJECT/konarksuntemple.jpg';
+  images[3]='D:/CSS MICROPROJECT/hawamahal.jpg';
+  images[4]='D:/CSS MICROPROJECT/Charminar-Hyderabad.jpg';
+  images[5]='D:/CSS MICROPROJECT/ajanta caves.jpg';
+  images[6]='D:/CSS MICROPROJECT/Mysore-Palace.jpg';
+  images[7]='D:/CSS MICROPROJECT/qutub minar.jpg';
+  images[8]='D:/CSS MICROPROJECT/redfort.jpg';
+  images[9]='D:/CSS MICROPROJECT/tajmahal.jpg';
+  images[10]='D:/CSS MICROPROJECT/agrafort.jpg';
+  images[11]='D:/CSS MICROPROJECT/tomb.jpg';
+  images[12]='D:/CSS MICROPROJECT/Khajurao.jpg';
+  images[13]='D:/CSS MICROPROJECT/sanchi.jpg';
+  images[14]='D:/CSS MICROPROJECT/Golconda.jpg';
+  images[15]='D:/CSS MICROPROJECT/meenakshi.jpg';
+  
+  
+  function changeImg()
+  {
+     document.slide.src=images[i];
+	 if(i<images.length-1)
+	 {
+	   i++;
+	 }
+	 else
+	 {
+	    i=0;
+	 }
+	 setTimeout("changeImg()",time);
+  }
+  window.onload=changeImg;
+  
+</script>
+</head>
+<body>
+   <h1>HISTORICLANDMARKS</h1>
+  <img class="slider" name="slide" width="700" height="500">
+  
+  <div class="next">
+  <a href="mainpage.html"><input type="button" value="GET INFORMATION"></a>
+  </div>
+</body>
+</html>

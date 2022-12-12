@@ -1,0 +1,90 @@
+body
+{
+	margin:0;
+	padding:0;
+	background-image:url('D:/CSS MICROPROJECT/homepage8.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.logo
+{
+	margin-left:90px;
+	border:3px solid black ;
+	border-radius:40px;
+	
+	//height:120px;
+}
+.navigation
+{
+	margin:5px;
+	height:100px;
+	display:flex;
+	list-style:none;
+	
+}
+h3{
+	display:flex;
+	margin:5px;
+	margin-right:90px;
+	padding:35px;
+	font-size:30px;
+	font-family:Courier;
+	//background-color:#FFEBCD;
+}
+.nav-list
+{
+	width:100%;
+	display:flex;
+	//background-color:#FFEBCD;
+	padding-left:260px;
+	
+}
+
+.navigation li {
+	
+	display:inline-block;
+	padding:0 15px;
+	justify-content:center;
+	align-items:center;
+}
+.navigation li a
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-family:arial;
+	display:block;
+	text-align:center;
+	padding:25px 20px;
+
+}
+.navigation a:hover
+{
+	background:#6495ED;
+}
+
+ h1
+{
+	padding-top:100px;
+	margin-right:800;
+	color:black;
+	text-align:center;
+}
+h2
+{
+	padding-top:5px;
+	color:blue;
+	text-align:center;
+	margin-right:600px;
+}
+.slide
+{
+      margin-left:550px;
+	  margin-top:50px;
+	  color:blue;
+	  width:170px;
+}
+.slide:hover
+{
+	background-color:white;
+}

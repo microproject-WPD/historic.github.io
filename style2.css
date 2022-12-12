@@ -1,0 +1,152 @@
+body{
+margin:0;
+padding:0;
+background-color:black;
+}
+.title
+{
+  color:white;
+  padding-top:20px;
+  margin-left:160px;  
+  text-align:left;  
+  font-size:35px;  
+}
+.div1{
+padding:20px 40px 20px; 
+}
+.img1{
+	padding:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img1:hover{
+	background-color:white;
+}
+.img2{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img2:hover{
+	background-color:white;
+}
+.img3{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img3:hover{
+	background-color:white;
+}
+.img4{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img4:hover{
+	background-color:white;
+}
+.div2{
+padding:20px 40px 20px; 
+}
+.img5{
+	padding:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img5:hover{
+	background-color:white;
+}
+.img6{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img6:hover{
+	background-color:white;
+}
+.img7{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img7:hover{
+	background-color:white;
+}
+
+.img8{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img8:hover{
+	background-color:white;
+}
+.div3{
+padding:20px 40px 20px; 
+}
+.img9{
+	padding:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img9:hover{
+	background-color:white;
+}
+
+.img10{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img10:hover{
+	background-color:white;
+}
+.img11{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img11:hover{
+	background-color:white;
+}
+.img12{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img12:hover{
+	background-color:white;
+}
+.div4{
+padding:10px 40px 25px; 
+}
+.img13{
+	padding:20px;
+	margin-left:0px;
+	box-shadow:0px 0px 10px white;
+}
+.img13:hover{
+	background-color:white;
+}
+.img14{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img14:hover{
+	background-color:white;
+}
+.img15{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img15:hover{
+	background-color:white;
+}
+.img16{
+	padding:20px;
+	margin-left:20px;
+	box-shadow:0px 0px 10px white;
+}
+.img16:hover{
+	background-color:white;
+}
